@@ -4,7 +4,6 @@ install: mvn install -DskipTests=true -Dgpg.skip=true
 jdk:
   - oraclejdk7
  # - openjdk7
-
 matrix:
  include:
   - jdk: oraclejdk8
