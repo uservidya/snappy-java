@@ -3,4 +3,9 @@ language: java
 install: mvn install -DskipTests=true -Dgpg.skip=true
 jdk:
   - oraclejdk7
-  - openjdk7
+ # - openjdk7
+matrix:
+ include:
+  - jdk: openjdk7
+ 
+ 
